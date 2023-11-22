@@ -1,0 +1,128 @@
+
+    <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity ">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Calculator"
+        android:textColor="#DA0606"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFirst"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter first number"
+        android:textSize="20dp"
+        android:textColor="#031FB9"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTextFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/textViewFirst"
+        android:hint="first_number"
+        android:inputType="numberDecimal"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textViewSecond"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textViewFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter second number"
+        android:textSize="20dp"
+        android:textColor="#0625D4"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextFirst"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/textViewFirst"
+        android:hint="first_number"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63" />
+
+    <TextView
+        android:id="@+id/textViewAnswer"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/textViewSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="40sp"
+        android:layout_centerInParent="true"
+        android:textColor="#0625D4"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_below="@+id/textViewAnswer"
+        />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/btnAdd"
+        android:text="SUB"
+        />
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_below="@+id/textViewAnswer"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/btnSub"
+        android:layout_marginStart="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mul"/>
+
+    Israel Class, [11/22/2023 9:28 AM]
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSub"
+        android:layout_marginStart="-43dp"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/btnSub"
+        android:text="Div "
+        />
+
+
+</RelativeLayout>
